@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #000000, #6a0dad);
+}
+
+.container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center
+}
+
+.container h1 {
+    margin-bottom: 30px;
+    color: #6a0dad;
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.input_field {
+    position: relative;
+}
+
+.input_field i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #6a0dad;
+}
+
+.input_field input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+
+.input_field input:focus {
+    border-color: #6a0dad;
+    box-shadow: 0 0 5px #6a0dad;
+}
+
+p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+p a {
+  color: #6a0dad;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1; 
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #6a0dad;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #4b0082;
+}
+
+.buttons .btn:nth-child(2) button {
+  background-color: #eaeaea;
+  color: #767676;
+}
+
+.buttons .btn:nth-child(2) button:hover {
+  background-color: #6a0dad; 
+  color: white;
+}
+
+button.active {
+  background-color: #ff6f91; /* example highlight color */
+  color: white;
+}
